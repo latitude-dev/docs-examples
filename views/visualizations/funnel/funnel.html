@@ -1,0 +1,20 @@
+<svelte:head>
+  <title>Funnel Chart</title>
+</svelte:head>
+<View class="gap-4 p-4 md:p-8">
+  <Row class="flex flex-col md:flex-row gap-8">
+    <FunnelChart
+      query='visualizations/funnel'
+      orientation='horizontal'
+      x='titles'
+      y='seasons'
+      config={{
+        showLabels: false,
+        showColorGradient: true
+      }}
+      opts={{
+        reactiveToParams: true
+      }}
+    />
+  </Row>
+</View>

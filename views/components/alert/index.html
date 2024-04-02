@@ -1,0 +1,46 @@
+<svelte:head>
+  <title>Alert Component</title>
+</svelte:head>
+<View class="flex flex-col gap-4 p-4 md:p-8">
+<Row class="flex gap-4">
+    <Alert class="flex-1" type='primary' secondary={true}>
+    Your text here for the alert
+    </Alert>
+    <Alert class="flex-1" type='primary' secondary={false}>
+    Your text here for the alert
+    </Alert>
+</Row>
+<Row class="flex gap-4">
+    <Alert class="flex-1" type='green' secondary={true}>
+    Your text here for the alert
+    </Alert>
+    <Alert class="flex-1" type='green' secondary={false}>
+    Your text here for the alert
+    </Alert>
+</Row>
+<Row class="flex gap-4">
+    <Alert class="flex-1" type='destructive' secondary={true}>
+    Your text here for the alert
+    </Alert>
+    <Alert class="flex-1" type='destructive' secondary={false}>
+    Your text here for the alert
+    </Alert>
+</Row>
+<Row class="flex gap-4">
+    <Alert class="flex-1" type='alert' secondary={true}>
+    Your text here for the alert
+    </Alert>
+    <Alert class="flex-1" type='alert' secondary={false}>
+    Your text here for the alert
+    </Alert>
+</Row>
+<Row class="flex gap-4">
+    <Alert class="flex-1" type='muted' secondary={true}>
+    Your text here for the alert
+    </Alert>
+    <Alert class="flex-1" type='muted' secondary={false}>
+    Your text here for the alert
+    </Alert>
+</Row>
+
+</View>

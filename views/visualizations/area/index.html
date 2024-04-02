@@ -1,0 +1,15 @@
+<svelte:head>
+  <title>Area Chart</title>
+</svelte:head>
+<View class="flex items-center h-full pl-8 pb-8 pt-10 pr-12">
+  <AreaChart
+    query='visualizations/area'
+    x='release_year'
+    y={[
+      {name: 'count_shows', chartType: 'area'},
+      {name: 'count_movies', chartType: 'area'},
+    ]}
+    xTitle='Year'
+    yTitle='Titles'
+  />
+</View>

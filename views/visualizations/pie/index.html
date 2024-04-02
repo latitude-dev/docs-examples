@@ -1,0 +1,18 @@
+<svelte:head>
+  <title>Pie Chart</title>
+</svelte:head>
+<View class="gap-4 p-4 md:p-8">
+  <Row class="flex flex-col md:flex-row gap-8">
+    <PieChart
+      query='visualizations/pie'
+      x='type'
+      y='count'
+      config={{
+        showHole: true
+      }}
+      opts={{
+        reactiveToParams: true
+      }}
+    />
+  </Row>
+</View>

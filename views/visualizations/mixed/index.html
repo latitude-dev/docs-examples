@@ -1,0 +1,15 @@
+<svelte:head>
+  <title>Mixed Chart Types</title>
+</svelte:head>
+<View class="flex items-center h-full pl-8 pb-8 pt-10 pr-12">
+    <BarChart
+      query='visualizations/mixed'
+      x='release_year'
+      y={[
+        {name: 'count_shows', chartType: 'bar'},
+        {name: 'count_movies', chartType: 'line'},
+      ]}
+      xTitle='Year'
+      yTitle='Titles'
+    />
+</View>
