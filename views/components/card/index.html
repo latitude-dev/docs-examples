@@ -1,0 +1,20 @@
+<svelte:head>
+  <title>Card Component</title>
+</svelte:head>
+<View class="gap-4 p-4 md:p-8">
+    <Row>
+      <Column>
+        <Card.Root>
+          <Card.Header>
+            <Text.H2 class='font-bold'>Card title</Text.H2>
+          </Card.Header>
+          <Card.Content>
+            <Text>The content of the card can be anything. Here's some arbitrary text.</Text>
+          </Card.Content>
+          <Card.Footer class='px-6 py-2'>
+            <Text color='text-muted'>This is a card footer with a long explainer</Text>
+          </Card.Footer>
+        </Card.Root>
+      </Column>
+    </Row>
+</View>
